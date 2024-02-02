@@ -1,5 +1,9 @@
 # Pizza 주문하기
 
+# 배포 Netelifiy
+
+### pizza-taewook.netlify.app
+
 # 결과물 + 더 개선해야함
 
 <img src="https://github.com/Taewook1212/react-homework/assets/147236247/38fc042a-d4a1-424d-bb8f-d970fbc52292"/>
