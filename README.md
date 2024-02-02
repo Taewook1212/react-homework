@@ -10,4 +10,4 @@
 
 # 수업 실습
 
-## [Pizza 주문하기 (재료 클릭, 이미지 합성, 계산, 전체선택 등등)](https://github.com/Taewook1212/react-homework/blob/main/src/homework/pizza-selector/pizza-selector.jsx)
+## [Pizza 주문하기 (재료 클릭, 이미지 합성, 계산, 전체선택 등등)](https://github.com/Taewook1212/react-homework/tree/main/src/homework/pizza-selector)
