@@ -1,0 +1,73 @@
+{
+  "name": "contacts.json",
+  "version": "0.0.1",
+  "author": "aaaa8229@naver.com",
+  "boardData": [
+    {
+      "id": 0,
+      "title": "운동하실분",
+      "age": "모든연령",
+      "category": "같이해요",
+      "created": "2024-01-05 07:16:09.482Z",
+      "date": "2024-01-19 12:00:00.000Z",
+      "locationSecond": "연희동",
+      "headcount": "3",
+      "time": "오후01:19"
+    },
+    {
+      "id": 1,
+      "title": "오프라인 모임 하실분",
+      "age": "34~23세",
+      "category": "같이해요",
+      "created": "2024-01-02 07:16:09.482Z",
+      "date": "2024-03-19 12:00:00.000Z",
+      "locationSecond": "연남동",
+      "headcount": "5",
+      "time": "오전05:56"
+    },
+    {
+      "id": 2,
+      "title": "공모전 하실분",
+      "age": "23세이상",
+      "category": "같이해요",
+      "created": "2024-01-05 07:16:09.482Z",
+      "date": "2024-06-19 12:00:00.000Z",
+      "locationSecond": "제주도",
+      "headcount": "3",
+      "time": "오후07:76"
+    },
+    {
+      "id": 3,
+      "title": "운동하실분",
+      "age": "모든연령",
+      "category": "같이해요",
+      "created": "2024-01-05 07:16:09.482Z",
+      "date": "2024-01-19 12:00:00.000Z",
+      "locationSecond": "광화문",
+      "headcount": "6",
+      "time": "오후01:19"
+    },
+    {
+      "id": 4,
+      "title": "스터디하실분",
+      "age": "34세 이하",
+      "category": "같이해요",
+      "created": "2024-01-05 07:16:09.482Z",
+      "date": "2024-01-19 12:00:00.000Z",
+      "locationSecond": "인천",
+      "headcount": "2",
+      "time": "오전05:56"
+    },
+    {
+      "id": 5,
+      "title": "프로젝트하실분",
+      "age": "23~43세",
+      "category": "같이해요",
+      "created": "2024-01-05 07:16:09.482Z",
+      "date": "2024-01-19 12:00:00.000Z",
+      "locationSecond": "천안",
+      "headcount": "5",
+      "time": "오후01:19"
+    }
+  ]
+}

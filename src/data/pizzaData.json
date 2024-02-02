@@ -1,0 +1,99 @@
+{
+  "name": "contacts.json",
+  "version": "0.0.1",
+  "author": "aaaa8229@naver.com",
+  "pizzaTopping": [
+    {
+      "id": 0,
+      "title": "파인애플",
+      "price": "500"
+    },
+    {
+      "id": 1,
+      "title": "베이컨",
+      "price": "1000"
+    },
+    {
+      "id": 2,
+      "title": "페퍼로니",
+      "price": "700"
+    },
+    {
+      "id": 3,
+      "title": "파프리카",
+      "price": "500"
+    },
+    {
+      "id": 4,
+      "title": "치즈",
+      "price": "1000"
+    },
+    {
+      "id": 5,
+      "title": "돼지고기",
+      "price": "700"
+    },
+    {
+      "id": 6,
+      "title": "양파",
+      "price": "2000"
+    },
+    {
+      "id": 7,
+      "title": "방울토마토",
+      "price": "1500"
+    },
+    {
+      "id": 8,
+      "title": "햄",
+      "price": "400"
+    },
+    {
+      "id": 9,
+      "title": "핫소스",
+      "price": "4000"
+    },
+    {
+      "id": 10,
+      "title": "할라피뇨",
+      "price": "10000"
+    },
+    {
+      "id": 11,
+      "title": "나쵸",
+      "price": "1430"
+    },
+    {
+      "id": 12,
+      "title": "버섯",
+      "price": "4330"
+    }
+  ],
+  "pizzaType": [
+    {
+      "id": 0,
+      "title": "일반도우",
+      "price": "0"
+    },
+    {
+      "id": 1,
+      "title": "토마토도우",
+      "price": "0"
+    },
+    {
+      "id": 2,
+      "title": "치즈도우",
+      "price": "0"
+    },
+    {
+      "id": 3,
+      "title": "저칼로리도우",
+      "price": "0"
+    },
+    {
+      "id": 4,
+      "title": "나폴리도우",
+      "price": "0"
+    }
+  ]
+}
