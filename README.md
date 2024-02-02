@@ -1,8 +1,13 @@
-# React + Vite
+# 주간 과제
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## [React Week-1](https://github.com/Taewook1212/react-homework/tree/main/src/homework/week-1)
 
-Currently, two official plugins are available:
+## [React Week-2](https://github.com/Taewook1212/react-homework/tree/main/src/homework/week-2)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## [React Week-3]()
+
+---
+
+# 수업 실습
+
+## [Pizza 주문하기 (재료 클릭, 이미지 합성, 계산, 전체선택 등등)](https://github.com/Taewook1212/react-homework/blob/main/src/homework/pizza-selector/pizza-selector.jsx)
