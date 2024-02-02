@@ -1,8 +1,6 @@
 # Pizza 주문하기
 
-# 배포 Netelifiy
-
-### pizza-taewook.netlify.app
+# 배포 Netelifiy [직접해보기](https://pizza-taewook.netlify.app)
 
 # 결과물 + 더 개선해야함
 
@@ -23,3 +21,6 @@
 1. 1개의 jsx 파일로만 구분함. commponent 폴더에 나눠야함
 2. 코드가 전체적으로 엉망이다. 처음에는 나름 리액트의 commponent로 구분하면서 코드를 작성했지만, 시간이 지나고 코드가 길어 짐에 따라 바닐라프로젝트에서 작성했던 습관처럼 관심사별로 나누기, 코드 정렬, 변수이름, 상수, 전역변수, 등등 을 놓치고 있다.
 3. useEffect나, 검색기능, 비동기처리 등등 할게 많다.
+
+#참고 자료 (재료 이미지)
+http://ccrch.com/wrk/index.php?path=2016%2F02%2Fdominos-oskapizza%2Fimg%2Ftoppings/
