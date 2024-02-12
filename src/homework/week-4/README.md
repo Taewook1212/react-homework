@@ -44,6 +44,8 @@
 
 ### netilfy 배포
 
+사용법 : 한 쪽은 이 주소로 열고, 다른 쪽은 시크릿모드로 주소 사용.
+
 https://kakaochat-taewook.netlify.app
 
 ---
