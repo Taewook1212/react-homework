@@ -1,5 +1,14 @@
 import { formattedDateShort, timeAgo } from '../../lib';
-function BoardContent({fullpeopleSvg,calenderSvg,category,title,age,date,time,locationSecond,created,
+function BoardContent({
+  fullpeopleSvg,
+  calenderSvg,
+  category,
+  title,
+  age,
+  date,
+  time,
+  locationSecond,
+  created,
 }) {
   return (
     <div className="col-start-1 row-start-1 row-end-3 col-end-3">

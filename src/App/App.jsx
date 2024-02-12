@@ -1,4 +1,4 @@
-import Exercise from '../homework/pizza-selector/pizza-selector';
+import Exercise from '../homework/week-4/chatScreen';
 import { ComponentHeader, ComponentFooter } from '../components';
 
 function App() {
