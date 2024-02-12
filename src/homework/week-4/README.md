@@ -46,6 +46,8 @@
 ### netilfy 배포
 
 사용법 : 한 쪽은 이 주소로 열고, 다른 쪽은 시크릿모드로 주소 사용.
+로그인 후 chatList 채팅 목록이 나오는 화면이 있는데,
+리스트가 안나온다면 새로고침을 해야합니다! (미해결)
 
 https://kakaochat-taewook.netlify.app
 
