@@ -15,10 +15,14 @@ const LoginScreen = () => {
   const navigateTo = useNavigate();
 
   useEffect(() => {
-    if (autoLogin) {
-      navigateTo('/chatList'); // 자동 로그인 후 다음 페이지로 이동
+    // 로컬 스토리지에서 autoLogin과 isLoggedIn 값을 읽어옴
+    const storedAutoLogin = JSON.parse(localStorage.getItem('autoLogin'));
+    const storedIsLoggedIn = JSON.parse(localStorage.getItem('isLoggedIn'));
+
+    // autoLogin이 true이거나 isLoggedIn이 true인 경우 chatList 페이지로 이동
+    if (storedAutoLogin || storedIsLoggedIn) {
+      navigateTo('/chatList');
     }
-    return;
   }, [navigateTo]);
 
   const handleSubmit = async (e) => {
@@ -30,18 +34,15 @@ const LoginScreen = () => {
       await pb
         .collection('users')
         .authWithPassword(userData.email, userData.password);
-      //서버의 인증처리 후 token 발송
+      // 서버의 인증처리 후 token 발송
 
-      const userInfo = { isLoggedIn: true, autoLogin };
-      sessionStorage.setItem('userInfo', JSON.stringify(userInfo));
+      // 로그인 상태와 자동 로그인 여부를 로컬 스토리지에 저장
+      localStorage.setItem('isLoggedIn', JSON.stringify(true));
+      localStorage.setItem('autoLogin', JSON.stringify(autoLogin));
 
-      //        // currentUser 값 설정
-      // currentUser = { id: 'your_user_id' };
-
-      handleLogin(); //로그인 인증 후 화면이동
+      handleLogin(); // 로그인 인증 후 화면 이동
     } catch (error) {
       console.error('Authentication failed: ', error);
-
       alert('로그인에 실패했습니다. 이메일과 비밀번호를 확인해주세요.');
     }
   };
@@ -51,62 +52,51 @@ const LoginScreen = () => {
   };
 
   return (
-    <div className="flex flex-col  items-center h-screen min-h-screen bg-yellow-400  ">
+    <div className="flex flex-col items-center h-screen min-h-screen bg-yellow-400">
       <h1 className="sr-only">로그인 화면</h1>
       <div className="w-1/2 relative min-h-full">
-        {isLoggedIn ? (
-          <button
-            className="bg-yellow-950 text-white  p-3 rounded-xl"
-            onClick={handleLogout}
-          >
-            로그아웃
-          </button>
-        ) : (
-          <div>
-            <form onSubmit={handleSubmit} className="flex flex-col  gap-5">
-              <div className="flex flex-col gap-3 mt-[100px]">
-                <input
-                  type="email"
-                  value={email}
-                  placeholder="이메일을 입력해주세요"
-                  className="p-3 rounded-xl whitespace-nowrap"
-                  onChange={handleEmailChange}
-                />
-                <input
-                  type="password"
-                  value={password}
-                  placeholder="비밀번호를 입력해주세요"
-                  className="p-3 rounded-xl whitespace-nowrap"
-                  onChange={handlePasswordChange}
-                />
-              </div>
-              <button
-                type="submit"
-                className="bg-yellow-950 text-white  p-3 rounded-xl"
-              >
-                Login
-              </button>
-
-              <label htmlFor="RememberButton">
-                <input
-                  id="RememberButton"
-                  type="checkbox"
-                  checked={autoLogin}
-                  onChange={handleAutoLogin}
-                  className="w-5 h-5"
-                />
-                자동 로그인
-              </label>
-            </form>
-
-            <a
-              href="#"
-              className="p-3 rounded-xl bg-white w-full text-center absolute bottom-20"
+        <div>
+          <form onSubmit={handleSubmit} className="flex flex-col gap-5">
+            <div className="flex flex-col gap-3 mt-[100px]">
+              <input
+                type="email"
+                value={email}
+                placeholder="이메일을 입력해주세요"
+                className="p-3 rounded-xl whitespace-nowrap"
+                onChange={handleEmailChange}
+              />
+              <input
+                type="password"
+                value={password}
+                placeholder="비밀번호를 입력해주세요"
+                className="p-3 rounded-xl whitespace-nowrap"
+                onChange={handlePasswordChange}
+              />
+            </div>
+            <button
+              type="submit"
+              className="bg-yellow-950 text-white p-3 rounded-xl"
             >
-              Create Account
-            </a>
-          </div>
-        )}
+              Login
+            </button>
+            <label htmlFor="RememberButton">
+              <input
+                id="RememberButton"
+                type="checkbox"
+                checked={autoLogin}
+                onChange={handleAutoLogin}
+                className="w-5 h-5"
+              />
+              자동 로그인
+            </label>
+          </form>
+          <a
+            href="#"
+            className="p-3 rounded-xl bg-white w-full text-center absolute bottom-20"
+          >
+            Create Account
+          </a>
+        </div>
       </div>
     </div>
   );

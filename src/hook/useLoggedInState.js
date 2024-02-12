@@ -8,7 +8,8 @@ const useLoggedInState = (initialValue) => {
 
   // 로컬 스토리지에서 사용자 정보 가져오기
   useEffect(() => {
-    const userInfo = sessionStorage.getItem('userInfo');
+    const userInfo = localStorage.getItem('isLoggedIn');
+
     if (userInfo) {
       const loginUserInfo = JSON.parse(userInfo);
 
@@ -18,7 +19,8 @@ const useLoggedInState = (initialValue) => {
 
   const handleLogout = () => {
     // 로컬 스토리지에서 사용자 정보 제거
-    sessionStorage.removeItem('userInfo');
+    localStorage.removeItem('autoLogin');
+    localStorage.removeItem('isLoggedIn');
     localStorage.removeItem('pocketbase_auth');
     setIsLoggedIn(false);
     navigateTo('/login');
