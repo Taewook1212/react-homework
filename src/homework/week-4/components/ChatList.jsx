@@ -77,6 +77,8 @@ const ChatList = () => {
     <div className="p-8 border">
       <div className="py-4 text-xl font-bold"> 채팅 </div>
       {allChats.map((chat) => {
+        if (allChats === undefined || !allChats)
+          alert('리스트안나와서 새로고침 눌러주세요..');
         return (
           <a key={chat.id} href={`chat-room/${chat.id}`}>
             <ChatBoxComponent chat={chat} />
